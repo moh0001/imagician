@@ -11,3 +11,4 @@ dist/
 *.gif
 test-output/
 test-images/
+.mcp.json
