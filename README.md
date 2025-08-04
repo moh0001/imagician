@@ -34,6 +34,18 @@ npm run build
 
 Add to your Claude Desktop configuration (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 
+### Quick setup with npx (recommended):
+```json
+{
+  "mcpServers": {
+    "imagician": {
+      "command": "npx",
+      "args": ["-y", "@flowy11/imagician"]
+    }
+  }
+}
+```
+
 ### If installed globally via npm:
 ```json
 {

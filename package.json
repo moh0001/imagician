@@ -25,7 +25,8 @@
   "homepage": "https://github.com/flowy11/imagician#readme",
   "main": "dist/index.js",
   "bin": {
-    "imagician": "dist/index.js"
+    "imagician": "dist/index.js",
+    "mcp-server-imagician": "dist/index.js"
   },
   "type": "module",
   "files": [
