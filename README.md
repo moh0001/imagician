@@ -1,5 +1,7 @@
 # Imagician - MCP Image Editor
 
+[![npm version](https://badge.fury.io/js/@flowy11%2Fimagician.svg)](https://www.npmjs.com/package/@flowy11/imagician)
+
 A Model Context Protocol (MCP) server for comprehensive image editing operations including resizing, format conversion, cropping, compression, and more.
 
 ## Features
@@ -28,6 +30,34 @@ git clone https://github.com/flowy11/imagician.git
 cd imagician
 npm install
 npm run build
+```
+
+## Usage with Claude Code
+
+Add to your Claude Code configuration (`~/.config/claude/config/settings/mcp-servers.json`):
+
+```json
+{
+  "imagician": {
+    "command": "npx",
+    "args": ["-y", "@flowy11/imagician"]
+  }
+}
+```
+
+## Usage with Cursor
+
+Add to your Cursor configuration (`~/.cursor/mcp_settings.json`):
+
+```json
+{
+  "mcpServers": {
+    "imagician": {
+      "command": "npx",
+      "args": ["-y", "@flowy11/imagician"]
+    }
+  }
+}
 ```
 
 ## Usage with Claude Desktop
